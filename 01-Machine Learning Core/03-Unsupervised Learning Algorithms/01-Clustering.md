@@ -1,0 +1,5 @@
+- K-Means: Algorithm steps, limitations (initialization, spherical clusters), elbow method, silhouette score.
+- Hierarchical Clustering: Agglomerative vs. Divisive, dendrograms, linkage methods.
+- DBSCAN: Density-based, core/border/noise points, advantages over K-Means.
+- Evaluation Metrics: Silhouette Score, Davies-Bouldin Index (conceptual), practical considerations (interpretability).
+- --

@@ -1,0 +1,7 @@
+- Common Techniques: One-hot encoding, label encoding, target encoding, frequency encoding, numerical scaling (standardization, normalization).
+- Feature Interaction: Polynomial features, interaction terms.
+- Time-based Features: Lag features, rolling averages, cyclical features, Fourier transforms for periodicity.
+- Domain-Specific Feature Creation (brief examples for NLP, CV, RecSys).
+- Embedding Techniques (brief intro, deep dive in DL section).
+- Feature Scaling considerations for different models.
+---

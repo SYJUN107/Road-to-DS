@@ -1,0 +1,6 @@
+- Decision Trees: ID3/C4.5/CART, splitting criteria (Gini, Entropy), pruning techniques, pros/cons.
+- Bagging: Random Forest (how it works, out-of-bag error, feature importance).
+- Boosting: AdaBoost (conceptual), Gradient Boosting Machines (GBM - how it learns sequentially).
+- XGBoost, LightGBM, CatBoost: Key differentiating features (parallelization, handling categorical features, leaf-wise vs. depth-wise), common hyperparameters, when to use which.
+- Stacking & Blending (conceptual).
+---

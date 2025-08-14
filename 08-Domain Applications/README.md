@@ -1,0 +1,2 @@
+- Overview of key ML applications and domain-specific challenges/techniques.
+- Dive into specific areas or choose those most relevant to target roles.

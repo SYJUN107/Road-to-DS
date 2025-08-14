@@ -1,0 +1,7 @@
+- Confusion Matrix: True/False Positives/Negatives.
+- Metric Definitions: Accuracy, Precision, Recall, F1-Score, Specificity. When each is appropriate (imbalanced classes).
+- ROC Curve & AUC: Interpretation, why ROC is useful for imbalanced data, what AUC represents.
+- PR Curve & AUC: When to use instead of ROC (highly imbalanced data).
+- LogLoss/Cross-Entropy: What it measures, interpretation.
+- Calibration (predictive probability vs. true frequency).
+- --

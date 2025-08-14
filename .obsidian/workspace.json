@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "2a941a15553ad09d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5294b947186ce518",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2590732679a6ad1",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bfee49ea675a7440",
+    "type": "split",
+    "children": [
+      {
+        "id": "c09e9e4209133992",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a53602577292cfe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a256e3bdf60198d1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "feature",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a711b43c7f7bfdeb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "b020380e00f9528e",
+    "type": "split",
+    "children": [
+      {
+        "id": "dab4294b08fbb684",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d57a687bc95460b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02-Technical Skills/03-Data Engineering/03-Data Warehousing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 03-Data Warehousing"
+            }
+          },
+          {
+            "id": "8429f30c0431d5aa",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02-Technical Skills/03-Data Engineering/03-Data Warehousing.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 03-Data Warehousing"
+            }
+          },
+          {
+            "id": "d26edfe45f9fcc6e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "821563c0cb7f2058",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02-Technical Skills/03-Data Engineering/03-Data Warehousing.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 03-Data Warehousing"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e2590732679a6ad1",
+  "lastOpenFiles": [
+    "01-Machine Learning Core/01-Foundations/02-Math Refresher Applied ML.md",
+    "01-Machine Learning Core/01-Foundations/01-ML Fundamentals.md",
+    "01-Machine Learning Core/02-Supervised Learning Algorithms/03- Ensemble Tree Models.md",
+    "01-Machine Learning Core/02-Supervised Learning Algorithms/02-Classification Models.md",
+    "01-Machine Learning Core/02-Supervised Learning Algorithms/01-Regression Models.md",
+    "01-Machine Learning Core/01-Foundations/04-Feature Selection Dimensionality Reduction.md",
+    "Index.md",
+    "Linear Algebra.md",
+    "Pasted image 20250807022204.png",
+    "01-Machine Learning Core/03-Unsupervised Learning Algorithms/01-Clustering.md",
+    "01-Machine Learning Core/03-Unsupervised Learning Algorithms/02-Anomaly Detection.md",
+    "01-Machine Learning Core/01-Foundations/03-Feature Engineering Advanced.md",
+    "02-Deep Learning/01-Neural Network Foundations.md",
+    "10-Mock Interviews Practice/05-Solutions Critiques.md",
+    "10-Mock Interviews Practice/04-Interview Questions Bank.md",
+    "10-Mock Interviews Practice/03-Behavioral Mocks.md",
+    "10-Mock Interviews Practice/02-Case Study Mocks.md",
+    "10-Mock Interviews Practice/01-Technical Mocks.md",
+    "10-Mock Interviews Practice/README.md",
+    "09-Behavioral Communication/04-Whiteboard Demonstration Skills.md",
+    "10-Mock Interviews Practice",
+    "09-Behavioral Communication/03-Active Listening Questioning.md",
+    "09-Behavioral Communication/02-Fit Questions.md",
+    "09-Behavioral Communication/01-STAR Stories Review.md",
+    "09-Behavioral Communication/README.md",
+    "08-Domain Applications/05-Specific Industry Applications.md",
+    "09-Behavioral Communication",
+    "08-Domain Applications/04-Time Series Analysis Forecasting.md",
+    "08-Domain Applications/03-Recommender Systems.md",
+    "08-Domain Applications",
+    "07-Business Product Strategy",
+    "06-System Design MLOps/Untitled",
+    "06-System Design MLOps",
+    "05-Algorithms & Data Structures Applied",
+    "04-Data Manipulation Processing",
+    "03-Statistics, Probability & Experimentation",
+    "02-Deep Learning/01-Neural Network Foundations"
+  ]
+}

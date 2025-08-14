@@ -1,0 +1,5 @@
+- Logistic Regression: Sigmoid, decision boundary, cross-entropy loss, interpretation of odds ratios.
+- Support Vector Machines (SVM): Max margin, kernel trick (linear, RBF), C parameter, hinge loss.
+- K-Nearest Neighbors (KNN): Pros/Cons, distance metrics, curse of dimensionality effect.
+- Naive Bayes: Why "Naive", Bayes' Theorem application, types (Gaussian, Multinomial, Bernoulli), assumptions.
+- --

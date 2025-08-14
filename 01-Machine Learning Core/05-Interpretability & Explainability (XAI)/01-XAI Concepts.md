@@ -1,0 +1,5 @@
+- Why Explainability: Trust, debugging, fairness, compliance, scientific discovery.
+- Global vs. Local Explanations.
+- Model-agnostic vs. Model-specific methods.
+- --
+- 

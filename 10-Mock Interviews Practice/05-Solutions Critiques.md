@@ -1,0 +1,2 @@
+- Dedicated files (e.g., .ipynb, .md) for your detailed solutions to harder problems.
+- Include self-critiques, alternative solutions, and areas for improvement based on mock interview feedback.

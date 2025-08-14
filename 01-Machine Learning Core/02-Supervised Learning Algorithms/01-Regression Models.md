@@ -1,0 +1,4 @@
+- Linear Regression: Assumptions, OLS, interpretation of coefficients, gradient descent perspective.
+- Regularization: Ridge (L2), Lasso (L1 - feature selection property), Elastic Net - mathematical form, effect on coefficients, when to use.
+- GLMs (Generalized Linear Models): Brief overview for context (e.g., Poisson regression for count data).
+---

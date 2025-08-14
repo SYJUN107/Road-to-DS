@@ -1,0 +1,2 @@
+- Transparency, Accountability, Privacy, Inclusiveness, Safety, Fairness.
+- Practical considerations for deploying ethical AI.

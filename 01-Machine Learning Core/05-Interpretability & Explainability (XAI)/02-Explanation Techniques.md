@@ -1,0 +1,6 @@
+- Permutation Feature Importance: How it works, advantages/disadvantages.
+- Partial Dependence Plots (PDP) & Individual Conditional Expectation (ICE): What they show, interpretation.
+- LIME (Local Interpretable Model-agnostic Explanations): How it works, conceptual example.
+- SHAP (SHapley Additive exPlanations): Game theory concept, how it works, interpretation of SHAP values (local & global).
+- Conceptual understanding of other methods (e.g., Layer-wise Relevance Propagation, Activation Maximization for CNNs).
+- --

@@ -1,0 +1,2 @@
+- Core statistical thinking and hypothesis testing.
+- Emphasis on A/B testing and causal inference.

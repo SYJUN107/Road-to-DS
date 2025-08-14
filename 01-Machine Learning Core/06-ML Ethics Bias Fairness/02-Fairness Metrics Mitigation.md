@@ -1,0 +1,5 @@
+- Fairness Definitions/Metrics: Demographic Parity, Equalized Odds, Predictive Parity, Sufficiency, Disparate Impact. When each is relevant.
+- Mitigation Strategies: Pre-processing (re-sampling, re-weighting), In-processing (adversarial debiasing, adding regularization terms), Post-processing (threshold adjustment).
+- Trade-offs between fairness and accuracy.
+- --
+- 

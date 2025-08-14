@@ -1,0 +1,3 @@
+- Types of Anomalies: Point, contextual, collective.
+- Techniques: Isolation Forest, One-Class SVM, Local Outlier Factor (LOF), statistical methods (e.g., Z-score, IQR).
+- Challenges: Class imbalance, dynamic thresholds.

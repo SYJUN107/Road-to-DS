@@ -1,0 +1,2 @@
+- Focus on algorithms relevant for data processing, recommendation systems, and specific ML contexts.
+- Assumes basic DSA (sorting, searching, trees, graphs) from CS background.

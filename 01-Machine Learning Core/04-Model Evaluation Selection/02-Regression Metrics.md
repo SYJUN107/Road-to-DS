@@ -1,0 +1,5 @@
+- MSE, RMSE: Definition, sensitivity to outliers.
+- MAE: Definition, robustness to outliers.
+- R-squared, Adjusted R-squared: Interpretation, limitations.
+- MAPE, SMAPE (for forecasting).
+- --

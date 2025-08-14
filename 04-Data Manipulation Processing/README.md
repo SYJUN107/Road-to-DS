@@ -1,0 +1,1 @@
+- Focus on advanced SQL, distributed computing concepts, and data quality.

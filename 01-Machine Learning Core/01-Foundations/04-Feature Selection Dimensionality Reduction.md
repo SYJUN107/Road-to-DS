@@ -1,0 +1,4 @@
+- Why Feature Selection: Reduce overfitting, improve interpretability, speed up training.
+- Methods: Filter (correlation, chi-squared, ANOVA, info gain), Wrapper (forward/backward selection, RFE), Embedded (Lasso, tree-based importance).
+- Dimensionality Reduction: PCA (math, conceptual interpretation, limitations), t-SNE, UMAP (conceptual, use cases).
+---

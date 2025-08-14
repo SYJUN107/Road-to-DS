@@ -1,0 +1,5 @@
+- Grid Search, Random Search: Pros/Cons, when to use.
+- Bayesian Optimization: Conceptual understanding (surrogate model, acquisition function), advantages.
+- Gradient-based optimization (e.g., for neural networks, though done via backprop).
+- Practical tips: Coarse-to-fine tuning, early stopping.
+- --

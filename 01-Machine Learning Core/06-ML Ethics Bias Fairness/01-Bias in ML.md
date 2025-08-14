@@ -1,0 +1,3 @@
+- Sources of Bias: Historical bias, representation bias, measurement bias, algorithmic bias, deployment bias.
+- Types of Harm: Allocative harm, representational harm.
+- Examples: Facial recognition, loan applications, hiring tools.

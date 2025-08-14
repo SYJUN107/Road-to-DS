@@ -1,0 +1,2 @@
+- Overview of advanced deep learning architectures and applications.
+- Focus on conceptual understanding and trade-offs.
