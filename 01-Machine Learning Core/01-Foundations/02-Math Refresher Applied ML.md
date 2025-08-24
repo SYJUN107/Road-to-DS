@@ -47,6 +47,57 @@ The objective is to create a predictive system that can predict user preferences
 	- A Singular values matrix ($\Sigma$) indicating the importance of this latent features.
 - By keeping only the top K singular values and their corresponding vectors we can obtain a low-dimensional representation (latent factor) for both users and items.
 - These representations might represent their underlying tastes (user that likes X genres).
-- 
+- The predictions (recommendations) can be obtained by multiplying the top K singular values and their corresponding user and item vectors such that: $R_{aprox}=U_k \Sigma_k V_k^T$ . By reconstructing it this way, $R_{aprox}$ will have all entries filled, including those that were originally missing, with predicted score representing a estimation on how the user will rate certain item. These scores can then be used to make recommendations.
 # Calculus & Optimization
+At its core, ML is about optimization, either minimizing a loss function or maximizing a reward. Calculus provides tools for this.
+### Derivatives & Gradients
+**Derivative (univariate)**: For a single variable function, the derivative measures the instantaneous rate of change of the function at a specific point. Geometrically, it shows the slope of the tangent to the function's curve at a specific point. It tells you which way the function increase/decrease its value.
+**Gradient (Multivariate)**: For a function of multiple variables, the gradient is a vector of all partial derivatives of the function. 
+**Role in ML**: We need to find the direction of the steepest descent (negative gradient) which minimizes the loss function. 
+### Gradient Descent
+It is an iterative optimization algorithm that finds the minimum of a function. To achieve this, it takes steps in the opposite direction of the gradient of the loss function with respect to the model's parameters.
+**Process**:
+1. Initialize model parameters randomly.
+2. Calculate the gradient of the loss function according to the model's parameters.
+3. Update parameters by moving a step in the direction opposite to the gradient.
+	- The size of the step is controlled by the learning rate.
+4. Repeat until convergence (e.g., loss stops decreasing significantly).
+Even thought the goal is to reach a global minimum, it could get stuck inside a local minimum, especially in complex, non-convex loss landscapes.
+### Gradient Descent Variants
+These variants addresses the trade-off of different aspects of the optimization algorithm, such as computational cost, speed of convergence or scalability.
+#### Stochastic Gradient Descent (SGD)
+- **Conceptual Difference:** Instead of calculating the gradient over the entire dataset, it calculates it using *only one random chosen training example at a time*.
+- **Pros:** Much faster for larger datasets plus it can also escape shallow local minima due to noisy updates.
+- **Cons:** Noisy updates can lead to oscillatory convergence which requires careful tuning of the learning rate.
+- **Note:** Often SGD in ML literature actually refers to Mini-Batch Gradient Descent.
+#### Adam (Adaptative Moment Estimation)
+- **Conceptual Difference:** An adaptive learning rate optimization algorithm which combines ideas of RMSProp and momentum:
+	- It stores exponentially [decaying averages](https://www.studocu.com/en-us/messages/question/10613568/what-is-a-decaying-average#:~:text=A%20decaying%20average%2C%20also%20known%20as%20an%20exponential,average%20more%20responsive%20to%20changes%20in%20the%20data.) (AKA EMA) of past gradients (*momentum concept*).
+	- It stores exponentially decaying averages of past **squared gradients** (*RMSProp concept*).
+	- it then uses these moments to adaptively decide on the learning rate of **each parameter**. It essentially provides a personalized learning rate for each parameter based on its past behavior.
+- **Pros:** Generally very effective, fast convergence, good performance across many problem types, often do not require extensive learning rate tuning.
+- **Cons:** Can sometimes generalize poorly (overfitting) compared to SGD with momentum (thought this is often fine-tuned away).
+#### RMSProp (Root Mean Square Propagation)
+- **Conceptual Difference:** It's also an adaptive learning rate algorithm which maintains an exponentially decaying average of the **squared gradients** for each parameter. It then divides the learning rate by the square root of this EMA, effectively scaling down learning rates for parameters with frequent occurrence and/or large gradients.
+- **Pros:** Addresses the problem of [vanishing/exploding gradients](https://deepgram.com/ai-glossary/vanishing-and-exploding-gradients) in RNNs. Helps with controlling the learning rate effectively.
+- **Cons:** Doesn't use the concept of momentum like how Adam does making it prone to slow convergence and less stable updates compared to Adam.
+### Jensen's Inequality
+- **Super useful videos:** 
+	- [video1 (quite visual and high level)](https://www.youtube.com/watch?v=u0_X2hX6DWE)
+	- [video2 (more technical)](https://www.youtube.com/watch?v=GDJFLfmyb20)
+- **Concept:** Imagine you have a line function $f(X)=X$ . If you first get the average of $X \{x1, x2, ...\}$, be it $\bar{X}$, and then introduce it to the function $f$ such that $f(\bar{X})$, it will be the same as if you were to first get all outputs and then average them ($\bar{f(X)}$), resulting in: $f(\bar{X})=\bar{f(X)}$.
+  What Jensen's inequality tells us is that if the function curves upwards, lets call it $g$ (convex function), $g(\bar{X})\le \bar{g(X)}$. This can be visualized as curving $f$, the middle point ($\bar{X}$) will curve below $f$ and the extremes will curve above $f$. For concave function ($h$) it is the other way around such that $h(\bar{X})\ge \bar{h(X)}$.
+	- Convex function: $$ f\left( \text{average of inputs} \right) \leq \text{average of outputs} $$![[Screenshot 2025-08-21 at 17.02.05.png]]
+	- Concave function $$ f\left( \text{average of inputs} \right) \geq \text{average of outputs} $$
+- **Role in ML:** Used in various proofs and derivations in convex optimization, information theory (e.g., proof of non-negativity of KL divergence) and the theoretical foundation for algorithms like Expectation Maximization.
+### Convexity
+- **Concept:** A property of a function where any line between 2 points lies above or below the graph. 
+	- *Convex Function*: Has a "bowl" shape, meaning any local minimum is also the global minimum.
+	- *Convex Set*: A set of points is called convex if, for any two points within the set, the line segment connecting them lies entirely within the set. Geometrically, this means the region includes all line segments between any pair of points in the set—it doesn’t “cave in” or exclude any part of those segments.
+- **Role in ML:**
+	- **Optimization:** For convex loss functions, gradient descent is guaranteed to find global minimum (if the learning rate is chosen correctly). This makes optimization much straight forward.
+	- **Guarantees:** Many algorithms optimizes convex loss function providing theoretical guarantees on convergence and optimality.
+	- **Non-convexity:** DNNs typically have non convex loss landscapes, meaning they can get stuck on local minima, making optimization a bigger challenge.
 # Probability & statistics
+These concepts provides the framework for you to understand uncertainty, modeling data and making informed decisions in ML.
+### Baye's Theorem
