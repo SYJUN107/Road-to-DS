@@ -11,10 +11,15 @@
             "id": "e2590732679a6ad1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "01-Machine Learning Core/01-Foundations/03-Feature Engineering Advanced.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "03-Feature Engineering Advanced"
             }
           }
         ]
@@ -74,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b020380e00f9528e",
@@ -167,17 +173,23 @@
   },
   "active": "e2590732679a6ad1",
   "lastOpenFiles": [
+    "01-Machine Learning Core/01-Foundations/02-Math Refresher Applied ML.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "Untitled 5.base",
+    "Untitled 4.base",
+    "Untitled 3.base",
+    "Untitled 2.base",
+    "01-Machine Learning Core/02-Supervised Learning Algorithms/01-Regression Models.md",
     "01-Machine Learning Core/02-Supervised Learning Algorithms/03- Ensemble Tree Models.md",
     "01-Machine Learning Core/04-Model Evaluation Selection/03-Hyperparameter Tuning.md",
     "01-Machine Learning Core/03-Unsupervised Learning Algorithms/01-Clustering.md",
     "01-Machine Learning Core/04-Model Evaluation Selection/01-Classification Metrics.md",
     "01-Machine Learning Core/03-Unsupervised Learning Algorithms/02-Anomaly Detection.md",
-    "01-Machine Learning Core/01-Foundations/02-Math Refresher Applied ML.md",
     "Screenshot 2025-08-21 at 18.46.11.png",
     "Screenshot 2025-08-21 at 17.02.05.png",
     "01-Machine Learning Core/01-Foundations/01-ML Fundamentals.md",
     "01-Machine Learning Core/02-Supervised Learning Algorithms/02-Classification Models.md",
-    "01-Machine Learning Core/02-Supervised Learning Algorithms/01-Regression Models.md",
     "01-Machine Learning Core/01-Foundations/04-Feature Selection Dimensionality Reduction.md",
     "Index.md",
     "Linear Algebra.md",
@@ -196,15 +208,8 @@
     "09-Behavioral Communication/02-Fit Questions.md",
     "09-Behavioral Communication/01-STAR Stories Review.md",
     "09-Behavioral Communication/README.md",
-    "08-Domain Applications/05-Specific Industry Applications.md",
     "09-Behavioral Communication",
     "08-Domain Applications",
-    "07-Business Product Strategy",
-    "06-System Design MLOps/Untitled",
-    "06-System Design MLOps",
-    "05-Algorithms & Data Structures Applied",
-    "04-Data Manipulation Processing",
-    "03-Statistics, Probability & Experimentation",
-    "02-Deep Learning/01-Neural Network Foundations"
+    "07-Business Product Strategy"
   ]
 }

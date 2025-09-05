@@ -101,3 +101,35 @@ These variants addresses the trade-off of different aspects of the optimization 
 # Probability & statistics
 These concepts provides the framework for you to understand uncertainty, modeling data and making informed decisions in ML.
 ### Baye's Theorem
+**Concept:** A fundamental theory that describes how to update the probability of a hypothesis $H$ based on new evidence $E$. It provides a way of getting posterior probability using prior knowledge and likelihood.
+**Formula**: $P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)}$
+- $P(H|E)$: Posterior probability of the hypothesis based on given evidence.
+- $P(E|H)$: Likelihood of evidence given a probability.
+- $P(H)$: Marginal (total) probability of the hypothesis.
+- $P(E)$: Marginal probability of the evidence.
+**ML Application:** Core to Bayesian models such as Naive Bayes Classifier or Bayesian inference. It is also the foundation for many probabilistic graphical models such as Hidden Markov Models. This concept is useful for incorporating beliefs into models such that some evidence (prior condition) can give us more information of the likelihood of something happening.
+### Probability Density Function (PDF) & Probability Mass Function (PMF)
+**Concept:** Functions that describes the probability distribution of a random variable.
+- **PMF (for discrete random variables):** Gives the probability for a discrete random variable to take on a certain value such as $P(X=x)$. The sum of all PMF values for all possible outcomes is 1.
+- **PDF (for continuous random variables):** The probability that a continuous random variable falls within a range of values $f(x)$ is the probability density at $x$. The probability of any single point is 0 (as it is extremely unlikely because continuous values have infinite values between them). The total area under the curve is 1.
+**ML Application:** It is used to model the distribution of input features or output variables (e.g., Gaussian distribution for continuous features, Bernoulli for binary outcomes). It is essential for probabilistic methods.
+### Likelihood
+**Concept:** The probability or the probability density of observing a given data when model parameters are fixed. It's written as $P(\text{Data}|\text{Parameters})$.
+**Crucial distinction:** Likelihood is not the same as probability. The key difference lies in the fact that probability refers to the probability of an outcome based on given parameters, $P(\text{Outcome}|\text{Input Parameters}$); whereas likelihood refers to how plausible different parameters are when you know the outcome, $P(\text{Input Parameters} | \text{Outcome})$.
+**ML Application:** The core function to be maximized in the Maximum Likelihood Estimation. It quantifies how well a set of parameters can explain over the observed data.
+- In this case by explain it means how probable is to get the observed data with certain parameters.
+### Maximum Likelihood Estimation (LME)
+**Concept:** A method for estimating the parameters of a statistical model. It finds the set of parameters that maximizes the likelihood function, meaning the parameters that makes the observed data most probable.
+**Method:** Often involves taking the logarithm of the likelihood function and then taking derivatives and setting to zero to find the maximum.
+**ML Application:** Widely used to "fit" parameters for many models such as Linear Regression (under Gaussian noise assumption), Logistic Regression, NB, Gaussian Mixture Models, and in Neural Network training objectives. It generally yields consistent and asymptotically (when sample size grows to infinity) efficient estimators. 
+### Maximum A Posteriori (MAP)
+**Concept:** An extension of MLE that incorporates prior knowledge or beliefs about the parameters. It finds the parameter values that **maximize the posterior probability** ($P(\text{Parameters}|\text{Data})$) of the parameters given the data, which is proportional to (Likelihood * Prior).
+**Formula (Proportional):** $\text{MAP Estimate} \propto P(\text{Data} | \text{Parameters}) \cdot P(\text{Parameters})$
+**ML Application:** Used when there's reliable prior information (e.g., regularization in linear models can be viewed as MAP estimation with a Gaussian or Laplace prior on parameters). It helps to prevent overfitting when data is sparse, by nudging parameters towards values suggested by the prior.
+### Central Limit Theorem (CLT)
+**Concept:** States that the distribution of sample means (or sums) from almost any population distribution will be approximately **normally distributed** (aka Gaussian; it do not include skewed versions), provided the sample size is sufficiently large, regardless of the original population's distribution.
+**Key Conditions:** Samples must be independent and identically distributed (i.i.d.), and the population must have a finite mean and variance (these values exists, is a real number and not infinite).
+**ML Application:**
+- **Statistical Inference:** Justifies the use of normal distribution-based statistical tests and confidence intervals for sample means, even if the underlying data isn't normal.
+- **Neural Networks:** Helps explain why aggregate activations or weights might tend towards normal distributions.
+- **Bootstrapping:** Underpins the validity of using resampling methods to estimate properties of sample distributions.
