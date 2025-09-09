@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b020380e00f9528e",
@@ -174,6 +173,7 @@
   "active": "e2590732679a6ad1",
   "lastOpenFiles": [
     "01-Machine Learning Core/01-Foundations/02-Math Refresher Applied ML.md",
+    "01-Machine Learning Core/01-Foundations/03-Feature Engineering Advanced.md",
     "Untitled.base",
     "Untitled 1.base",
     "Untitled 5.base",
@@ -194,7 +194,6 @@
     "Index.md",
     "Linear Algebra.md",
     "Pasted image 20250807022204.png",
-    "01-Machine Learning Core/01-Foundations/03-Feature Engineering Advanced.md",
     "02-Deep Learning/01-Neural Network Foundations.md",
     "10-Mock Interviews Practice/05-Solutions Critiques.md",
     "10-Mock Interviews Practice/04-Interview Questions Bank.md",
