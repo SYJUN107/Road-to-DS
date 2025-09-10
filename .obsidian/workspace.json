@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Machine Learning Core/01-Foundations/03-Feature Engineering Advanced.md",
+                "file": "01-Machine Learning Core/01-Foundations/04-Feature Selection Dimensionality Reduction.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "03-Feature Engineering Advanced"
+              "title": "04-Feature Selection Dimensionality Reduction"
             }
           }
         ]
@@ -173,6 +173,8 @@
   "active": "e2590732679a6ad1",
   "lastOpenFiles": [
     "01-Machine Learning Core/01-Foundations/02-Math Refresher Applied ML.md",
+    "01-Machine Learning Core/01-Foundations/01-ML Fundamentals.md",
+    "01-Machine Learning Core/01-Foundations/04-Feature Selection Dimensionality Reduction.md",
     "01-Machine Learning Core/01-Foundations/03-Feature Engineering Advanced.md",
     "Untitled.base",
     "Untitled 1.base",
@@ -188,9 +190,7 @@
     "01-Machine Learning Core/03-Unsupervised Learning Algorithms/02-Anomaly Detection.md",
     "Screenshot 2025-08-21 at 18.46.11.png",
     "Screenshot 2025-08-21 at 17.02.05.png",
-    "01-Machine Learning Core/01-Foundations/01-ML Fundamentals.md",
     "01-Machine Learning Core/02-Supervised Learning Algorithms/02-Classification Models.md",
-    "01-Machine Learning Core/01-Foundations/04-Feature Selection Dimensionality Reduction.md",
     "Index.md",
     "Linear Algebra.md",
     "Pasted image 20250807022204.png",
